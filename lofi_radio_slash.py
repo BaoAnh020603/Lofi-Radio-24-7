@@ -1,9 +1,11 @@
 import discord
-from discord import app_commands
 from discord.ext import commands
 import yt_dlp
 import random
-
+import asyncio
+import os
+import requests
+from keep_alive import keep_alive 
 # ===== CẤU HÌNH BOT =====
 intents = discord.Intents.default()
 intents.voice_states = True
